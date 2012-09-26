@@ -1,0 +1,91 @@
+﻿@using AppB2.Custom
+@using DAL
+@model AppB2.Models.Credentials
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" href="~/Css/validationEngine.jquery.css" type="text/css"/>
+    <script type="text/javascript" src="~/Scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validationEngine.js"></script>
+    @Html.JqueryValidationLocale((string)ViewBag._lang)
+    <script type="text/javascript">
+        $(function () {
+            $("#loginForm").validationEngine();
+        })
+    </script>
+</head>
+<body>
+    Base controller lang cookie :@ViewBag._lang
+    @using (Html.BeginForm("Index","Login",FormMethod.Post,new { id = "loginForm"}))
+    {
+        <table>
+            <tr>
+                <td>
+                    @Localization.Login.Resource.Email_Label:
+                </td>
+                <td>
+                    @Html.TextBoxFor(x => x.Email, new { @class = "validate[required,custom[email]]" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Localization.Login.Resource.Password_Label:
+                </td>
+                <td>
+                    @Html.TextBoxFor(x => x.Password, new { @class = "validate[required]" })
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button>@Localization.Login.Resource.Login_Button_Text</button>
+                </td>
+            </tr>
+        </table>
+    }
+
+    @using (Html.BeginForm("SetLanguage","Login",FormMethod.Post))
+    { 
+        @Html.LanguageDropDown("lang",(string)ViewBag._lang)
+        <button type="submit">@Localization.Login.Resource.Set_Language_Button_Text</button>
+    }
+
+    @{
+        var users = ViewBag.Users as IEnumerable<MembershipUser>;
+        if (users!=null && users.Count() > 0)
+        {
+            <text>
+            <table border="2">
+              <tr>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Password
+                </th>
+                <th>
+                    Role
+                </th>
+            </tr>
+            </text>
+            foreach (var user in users)
+            {
+                <text><tr>
+                    <td>@user.UserName</td>
+                    <td>@user.GetPassword()</td>
+                    <td>
+                        @{
+                            var roles =  System.Web.Security.Roles.GetRolesForUser(user.UserName);
+                            if (roles!=null && roles.Count() > 0) 
+                            {
+                                @roles.Aggregate((current, next) => current + ", " + next)
+                            }
+                        }
+                    </td>
+                </tr></text>
+            }
+           @:</table>
+        } 
+     }
+</body>
+</html>

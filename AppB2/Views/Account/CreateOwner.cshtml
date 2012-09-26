@@ -1,0 +1,70 @@
+﻿@using AppB2.Custom
+@model AppB2.Models.NewOwner
+@{
+    Layout = "~/Views/Shared/_Admin.cshtml";
+    ViewBag.Title = "Create Owner";
+}
+
+@if (TempData["Error"] != null) { <text>@TempData["Error"].ToString()</text> }
+
+@Html.ValidationSummary()
+
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>
+                First Name:
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.FirstName)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Last Name:
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.LastName)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone:
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Phone, new { type = "tel" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Franchizer:
+            </td>
+            <td>
+                @Html.FranchizersDropDown("FranchizerId")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Email, new { type = "email" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Password, new { type = "password" })
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button>
+                    Create</button>
+            </td>
+        </tr>
+    </table>
+}

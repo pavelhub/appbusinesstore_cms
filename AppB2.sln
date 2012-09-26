@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Web Developer Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppB2", "AppB2\AppB2.csproj", "{C3E7BB41-B770-4A4C-8CAE-F8CD27902000}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{1BD8E121-F824-4029-BE83-6362075F649C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localization", "Localization\Localization.csproj", "{C8FC4037-DB4E-45D3-AD41-1471CEDAFB9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3E7BB41-B770-4A4C-8CAE-F8CD27902000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E7BB41-B770-4A4C-8CAE-F8CD27902000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E7BB41-B770-4A4C-8CAE-F8CD27902000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E7BB41-B770-4A4C-8CAE-F8CD27902000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD8E121-F824-4029-BE83-6362075F649C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD8E121-F824-4029-BE83-6362075F649C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD8E121-F824-4029-BE83-6362075F649C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD8E121-F824-4029-BE83-6362075F649C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8FC4037-DB4E-45D3-AD41-1471CEDAFB9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8FC4037-DB4E-45D3-AD41-1471CEDAFB9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8FC4037-DB4E-45D3-AD41-1471CEDAFB9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8FC4037-DB4E-45D3-AD41-1471CEDAFB9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

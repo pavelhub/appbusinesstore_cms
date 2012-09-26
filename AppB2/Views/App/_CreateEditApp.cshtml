@@ -1,0 +1,28 @@
+﻿@model AppB2.Models.App
+@using (Html.BeginForm((string)ViewBag.Mode, "App", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.Id)
+    <table>
+        <tr>
+            <td>
+                App name:
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Name)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Is active:
+            </td>
+            <td>
+                @Html.CheckBoxFor(x => x.IsActive)
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button>@ViewBag.Mode</button>
+            </td>
+        </tr>
+    </table>
+}

@@ -1,0 +1,36 @@
+﻿.<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    @RenderSection("CSS", false)
+    @RenderSection("Script", false)
+</head>
+<body>
+    OwnerId : @Session["OwnerId"] <br />
+    Userid : @Session["UserId"]
+    <table>
+        <tr>
+            <td colspan="5">
+                <table>
+                    <tr>
+                        <td>
+                           @Html.ActionLink("LogOut", "LogOut", "Login") |
+                        </td>
+                        <td>
+                            @Html.ActionLink("All", "List", "App") |
+                        </td>
+                        <td>
+                            @Html.ActionLink("Create app", "Create", "App")
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top" class="content">
+                @RenderBody()
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

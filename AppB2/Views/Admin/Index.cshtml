@@ -1,0 +1,39 @@
+﻿@model AppB2.Models.Credentials
+@{
+    Layout = "~/Views/Shared/_Admin.cshtml";
+    ViewBag.Title = "Create franchize";
+}
+<h1>
+    Create franchize</h1>
+<script type="text/javascript">
+    var isCreated = '@TempData["isCreated"]';
+    if (isCreated != null && isCreated != '') alert(isCreated);
+</script>
+@System.Threading.Thread.CurrentThread.CurrentUICulture.Name
+@using (Html.BeginForm("CreateFranchize", "Admin", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Email)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Password)
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">
+                    Create</button>
+            </td>
+        </tr>
+    </table>
+}

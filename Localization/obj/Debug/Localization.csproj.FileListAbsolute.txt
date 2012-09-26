@@ -1,0 +1,12 @@
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\bin\Debug\Localization.dll
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\bin\Debug\Localization.pdb
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\bin\Debug\ru\Localization.resources.dll
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\obj\Debug\Localization.Login.Resource.resources
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\obj\Debug\Localization.Login.Resource.ru.resources
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\obj\Debug\ru\Localization.resources.dll
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\obj\Debug\Localization.dll
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\obj\Debug\Localization.pdb
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\Localization\obj\Debug\Localization.Account.Resource.resources

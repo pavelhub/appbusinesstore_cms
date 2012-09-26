@@ -1,0 +1,9 @@
+﻿@model AppB2.Models.App
+@{
+    ViewBag.Title = "Create App";
+    Layout = "~/Views/Shared/_Owner.cshtml";
+}
+
+@*@if (TempData["Test"] != null) { <text>@TempData["Test"]</text>}*@
+
+@{Html.RenderPartial("_CreateEditApp", Model);}

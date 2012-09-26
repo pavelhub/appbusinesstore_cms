@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DALStoreContainer" CdmEntityContainer="DALContext">
+    <EntitySetMapping Name="application" StoreEntitySet="application" TypeName="DAL.application">
+      <ScalarProperty Name="id" ColumnName="id" />
+      <ScalarProperty Name="app_name" ColumnName="app_name" />
+      <ScalarProperty Name="is_active" ColumnName="is_active" />
+      <ScalarProperty Name="demo_password" ColumnName="demo_password" />
+      <ScalarProperty Name="owner_id" ColumnName="owner_id" />
+      <ScalarProperty Name="server_timestamp" ColumnName="server_timestamp" />
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProfileData" StoreEntitySet="ProfileData" TypeName="DAL.ProfileData">
+      <ScalarProperty Name="pId" ColumnName="pId" />
+      <ScalarProperty Name="Profile" ColumnName="Profile" />
+      <ScalarProperty Name="Name" ColumnName="Name" />
+      <ScalarProperty Name="ValueString" ColumnName="ValueString" />
+      <ScalarProperty Name="ValueBinary" ColumnName="ValueBinary" />
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profiles" StoreEntitySet="Profiles" TypeName="DAL.Profiles">
+      <ScalarProperty Name="pId" ColumnName="pId" />
+      <ScalarProperty Name="Username" ColumnName="Username" />
+      <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+      <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+      <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+      <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles" StoreEntitySet="Roles" TypeName="DAL.Roles">
+      <ScalarProperty Name="Rolename" ColumnName="Rolename" />
+      <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sessions" StoreEntitySet="Sessions" TypeName="DAL.Sessions">
+      <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+      <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+      <ScalarProperty Name="Created" ColumnName="Created" />
+      <ScalarProperty Name="Expires" ColumnName="Expires" />
+      <ScalarProperty Name="Timeout" ColumnName="Timeout" />
+      <ScalarProperty Name="Locked" ColumnName="Locked" />
+      <ScalarProperty Name="LockId" ColumnName="LockId" />
+      <ScalarProperty Name="LockDate" ColumnName="LockDate" />
+      <ScalarProperty Name="Data" ColumnName="Data" />
+      <ScalarProperty Name="Flags" ColumnName="Flags" />
+    </EntitySetMapping>
+    <EntitySetMapping Name="skins" StoreEntitySet="skins" TypeName="DAL.skins">
+      <ScalarProperty Name="id" ColumnName="id" />
+      <ScalarProperty Name="app_id" ColumnName="app_id" />
+      <ScalarProperty Name="skin_name" ColumnName="skin_name" />
+      <ScalarProperty Name="application_color" ColumnName="application_color" />
+      <ScalarProperty Name="application_bg_color_start" ColumnName="application_bg_color_start" />
+      <ScalarProperty Name="application_bg_color_end" ColumnName="application_bg_color_end" />
+      <ScalarProperty Name="application_text_color" ColumnName="application_text_color" />
+      <ScalarProperty Name="list_bg_color_start" ColumnName="list_bg_color_start" />
+      <ScalarProperty Name="list_bg_color_end" ColumnName="list_bg_color_end" />
+      <ScalarProperty Name="list_alt_bg_color_start" ColumnName="list_alt_bg_color_start" />
+      <ScalarProperty Name="list_alt_bg_color_end" ColumnName="list_alt_bg_color_end" />
+      <ScalarProperty Name="list_bg_opacity" ColumnName="list_bg_opacity" />
+      <ScalarProperty Name="list_text_color" ColumnName="list_text_color" />
+      <ScalarProperty Name="list_alt_text_color" ColumnName="list_alt_text_color" />
+      <ScalarProperty Name="content_bg_color_start" ColumnName="content_bg_color_start" />
+      <ScalarProperty Name="content_bg_color_end" ColumnName="content_bg_color_end" />
+      <ScalarProperty Name="content_text_color" ColumnName="content_text_color" />
+      <ScalarProperty Name="content_text_size" ColumnName="content_text_size" />
+      <ScalarProperty Name="server_timestamp" ColumnName="server_timestamp" />
+    </EntitySetMapping>
+    <EntitySetMapping Name="themes" StoreEntitySet="themes" TypeName="DAL.themes">
+      <ScalarProperty Name="id" ColumnName="id" />
+      <ScalarProperty Name="theme_name" ColumnName="theme_name" />
+      <ScalarProperty Name="splashscreen_mode" ColumnName="splashscreen_mode" />
+      <ScalarProperty Name="splashscreen_url" ColumnName="splashscreen_url" />
+      <ScalarProperty Name="gadgets_mode" ColumnName="gadgets_mode" />
+      <ScalarProperty Name="description" ColumnName="description" />
+      <ScalarProperty Name="app_id" ColumnName="app_id" />
+      <ScalarProperty Name="navigation_bar_bg_url" ColumnName="navigation_bar_bg_url" />
+      <ScalarProperty Name="content_bg_url" ColumnName="content_bg_url" />
+      <ScalarProperty Name="server_timestamp" ColumnName="server_timestamp" />
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_franchaser" StoreEntitySet="user_franchaser" TypeName="DAL.user_franchaser">
+      <ScalarProperty Name="id" ColumnName="id" />
+      <ScalarProperty Name="user_id" ColumnName="user_id" />
+      <ScalarProperty Name="first_name" ColumnName="first_name" />
+      <ScalarProperty Name="last_name" ColumnName="last_name" />
+      <ScalarProperty Name="company_name" ColumnName="company_name" />
+      <ScalarProperty Name="telephone" ColumnName="telephone" />
+      <ScalarProperty Name="email" ColumnName="email" />
+      <ScalarProperty Name="domain_name" ColumnName="domain_name" />
+      <ScalarProperty Name="country" ColumnName="country" />
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_owner" StoreEntitySet="user_owner" TypeName="DAL.user_owner">
+      <ScalarProperty Name="id" ColumnName="id" />
+      <ScalarProperty Name="user_id" ColumnName="user_id" />
+      <ScalarProperty Name="franchaser_id" ColumnName="franchaser_id" />
+      <ScalarProperty Name="first_name" ColumnName="first_name" />
+      <ScalarProperty Name="last_name" ColumnName="last_name" />
+      <ScalarProperty Name="telephone" ColumnName="telephone" />
+      <ScalarProperty Name="email" ColumnName="email" />
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users" StoreEntitySet="Users" TypeName="DAL.Users">
+      <ScalarProperty Name="pId" ColumnName="pId" />
+      <ScalarProperty Name="Username" ColumnName="Username" />
+      <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+      <ScalarProperty Name="Email" ColumnName="Email" />
+      <ScalarProperty Name="Comment" ColumnName="Comment" />
+      <ScalarProperty Name="Password" ColumnName="Password" />
+      <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+      <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+      <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+      <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+      <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+      <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+      <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+      <ScalarProperty Name="IsOnLine" ColumnName="IsOnLine" />
+      <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+      <ScalarProperty Name="LastLockedOutDate" ColumnName="LastLockedOutDate" />
+      <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+      <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+      <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+      <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersInRoles" StoreEntitySet="UsersInRoles" TypeName="DAL.UsersInRoles">
+      <ScalarProperty Name="Username" ColumnName="Username" />
+      <ScalarProperty Name="Rolename" ColumnName="Rolename" />
+      <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

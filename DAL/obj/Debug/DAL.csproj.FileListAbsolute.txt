@@ -1,0 +1,5 @@
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\DAL\bin\Debug\DAL.dll
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\DAL\bin\Debug\DAL.pdb
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\DAL\obj\Debug\DAL.dll
+C:\Documents and Settings\mrGerych\мои документы\visual studio 2010\Projects\AppB2\DAL\obj\Debug\DAL.pdb

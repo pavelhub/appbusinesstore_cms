@@ -1,0 +1,37 @@
+﻿.<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    @RenderSection("CSS", false)
+    @RenderSection("Script", false)
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="5">
+                <table>
+                    <tr>
+                        <td>
+                           @Html.ActionLink("LogOut", "LogOut", "Login") |
+                        </td>
+                        <td>
+                           @Html.ActionLink("Create Franchize", "CreateFranchize", "Account") |
+                        </td>
+                        <td>
+                             @Html.ActionLink("Create Owner", "CreateOwner", "Account") |
+                        </td>
+                        <td>
+                            @Html.ActionLink("Create app", "Create", "App")
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top" class="content">
+                @RenderBody()
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

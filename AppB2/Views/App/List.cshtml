@@ -1,0 +1,43 @@
+﻿@model IEnumerable<AppB2.Models.App>
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Owner.cshtml";
+}
+@if (Model == null)
+{ <text> No apps </text> }
+else
+{
+    <table>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Is Active
+            </th>
+            <th>
+                Edit
+            </th>
+            <th>
+                Delete
+            </th>
+        </tr>
+        @foreach (var app in Model)
+        {
+            <tr>
+                <td>
+                    @app.Name
+                </td>
+                <td>
+                    @Html.CheckBoxFor(x => app.IsActive)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Update", new { id = app.Id })
+                </td>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id = app.Id })
+                </td>
+            </tr>
+        }
+    </table>
+}
